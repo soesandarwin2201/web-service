@@ -6,10 +6,18 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "gulp": "gulp --gulpfile gulpfile.cjs"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.64.0",
     "vite": "^4.4.0"
-  }
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
+
