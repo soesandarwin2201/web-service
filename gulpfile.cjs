@@ -2,10 +2,9 @@ const { src, dest, watch, series } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 
 const scssSrc = "assets/styles/main.scss"; // Update the path to the correct location
-const cssDest = "dist/css";
 
 function buildStyles() {
-  return src(scssSrc).pipe(sass()).pipe(dest(cssDest));
+  return src(scssSrc).pipe(sass()).pipe(dest("css"));
 }
 
 function watchTask() {
