@@ -1,4 +1,6 @@
 .btn {
+  @include transition(background-color);
+
   display: inline-block;
   padding: spacer(1) spacer(2);
   border: none;
