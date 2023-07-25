@@ -3,3 +3,12 @@
 @import "core/colors";
 @import "core/typography";
 @import "core/reset";
+@import "core/spacing";
+@import "utils/mixins";
+@import 'utils/functions';
+
+// components
+@import "components/button";
+
+// header
+@import "layouts/navbar"
