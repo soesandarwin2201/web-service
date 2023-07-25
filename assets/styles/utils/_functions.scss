@@ -1,0 +1,7 @@
+@function rem($pixels) {
+  @return #{$pixels / $font-size-base}rem;
+}
+
+@function spacer($steps) {
+  @return $steps * $spacer-scale;
+}
