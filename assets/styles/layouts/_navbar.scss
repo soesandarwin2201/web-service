@@ -1,0 +1,54 @@
+.navbar {
+  width: 100%;
+  padding: spacer(2);
+}
+
+.nav-container {
+  @include container;
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  .brand-logo {
+    width: 150px;
+    height: 50px;
+  }
+
+  .navbar-brand {
+    margin-right: spacer(3);
+  }
+
+  .nav-list {
+    display: flex;
+    flex-grow: 1;
+
+    .nav-item {
+      @include list-unstyled;
+      @include nav-item-hover;
+    
+      cursor: pointer;
+      padding: spacer(1) spacer(2);
+    
+      .nav-link {
+        @include anchor-unstyled;
+        font-size: $font-size-medium;
+      }
+    }
+
+    .nav-item:nth-child(5) {
+      @include transition(color);
+
+      margin-left: auto;
+      color: $color-secondary;
+
+      &:hover {
+        color: darken($color-secondary, 15%);
+      }
+    }
+
+    .nav-item:nth-child(6) {
+      padding: 0;
+    }
+  }
+}
