@@ -1,5 +1,11 @@
+@use "sass:math";
+
 @function rem($pixels) {
-  @return #{$pixels / $font-size-base}rem;
+  @return #{math.div($pixels, $font-size-base)}rem;
+}
+
+@function em($pixels) {
+  @return #{math.div($pixels, $font-size-base)}em;
 }
 
 @function spacer($steps) {
