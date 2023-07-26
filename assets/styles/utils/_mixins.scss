@@ -4,6 +4,10 @@
 	max-width: 1250px;
 	padding-left: 15px;
 	padding-right: 15px;
+
+	@include phone {
+		padding: 0;
+	}
 }
 
 @mixin transition($property) {
