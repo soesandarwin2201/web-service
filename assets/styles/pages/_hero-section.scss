@@ -1,0 +1,30 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.hero-section {
+     position: relative;
+     width: 100vw;
+     height: 100vh; /* Set a fixed height for the hero section */
+   }
+   
+   .background-container {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 40%;
+     height: 100%;
+     background-color: #000;
+     /* Add your background styles here */
+   }
+   
+   .hero-section-container {
+     position: relative;
+     z-index: 2;
+     width: 60%;
+     /* Add any other styles you want for the hero section container here */
+   }
+   
+   
