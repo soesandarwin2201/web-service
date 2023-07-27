@@ -5,26 +5,33 @@
 }
 
 .hero-section {
-     position: relative;
      width: 100vw;
-     height: 100vh; /* Set a fixed height for the hero section */
-   }
-   
-   .background-container {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 40%;
-     height: 100%;
-     background-color: #000;
-     /* Add your background styles here */
-   }
-   
-   .hero-section-container {
+     height: 100vh;
      position: relative;
-     z-index: 2;
-     width: 60%;
-     /* Add any other styles you want for the hero section container here */
-   }
+}
+   
+.background-container {
+     background: url(/assets/images/background.jpeg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 65vw;
+     height: 50vh;
+     position: absolute;
+     top: 50px;
+     left: 0;
+     z-index: -10;
+}
+
+.hero-section-container {
+  background-color: #fff;
+  position: relative;
+  height: 80%;
+  right: 0;
+  top: 5rem;
+  margin-left: 3rem;
+  border-radius: 10px;
+}
+   
    
    
