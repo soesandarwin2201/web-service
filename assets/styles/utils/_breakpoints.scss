@@ -1,0 +1,38 @@
+// Define your breakpoints as variables
+$breakpoint-phone: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Mixin for phones
+@mixin phone {
+  @media (max-width: em($breakpoint-phone)) {
+    @content;
+  }
+}
+
+// Mixin for tablets
+@mixin tablet {
+  @media (min-width: em($breakpoint-phone + 1)) and (max-width: em($breakpoint-tablet)) {
+    @content;
+  }
+}
+
+@mixin tablet-phone {
+  @media (max-width: em($breakpoint-tablet)) {
+    @content;
+  }
+}
+
+// Mixin for desktops
+@mixin desktop {
+  @media (min-width: em($breakpoint-tablet + 1)) and (max-width: em($breakpoint-desktop)) {
+    @content;
+  }
+}
+
+// Mixin for larger screens
+@mixin large-desktop {
+  @media (min-width: em($breakpoint-desktop + 1)) {
+    @content;
+  }
+}

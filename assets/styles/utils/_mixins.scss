@@ -1,0 +1,32 @@
+@mixin container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1250px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@include phone {
+		padding: 0;
+	}
+}
+
+@mixin transition($property) {
+	transition: $property 0.2s ease-in;
+}
+
+@mixin list-unstyled {
+	list-style: none;
+}
+
+@mixin anchor-unstyled {
+	text-decoration: none;
+	color: inherit;
+}
+
+@mixin nav-item-hover {
+	@include transition(color);
+
+	&:hover {
+		color: $color-link-hover;
+	}
+}
