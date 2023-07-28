@@ -1,14 +1,20 @@
 .navbar {
   width: 100%;
   padding: spacer(2);
+
+  @include tablet-phone {
+		padding: spacer(1);
+	}
 }
 
 .nav-container {
-  @include container;
-
   display: flex;
   align-items: center;
   height: 100%;
+
+  @include phone {
+		padding: 0;
+	}
 
   @include tablet-phone {
     flex-wrap: wrap;
@@ -59,7 +65,7 @@
 
       @include tablet-phone {
         padding: spacer(2);
-        border-bottom: 1px solid lighten($hr-color, 18%);
+        border-bottom: 1px solid $color-border;
         order: 2;
       }
 
