@@ -29,6 +29,8 @@
 .hero-section-container {
   @include container;
 
+  padding-top: spacer(1);
+  padding-bottom: spacer(1);
   background-color: $bright;
   position: $position_relative;
   border-radius: 10px;
