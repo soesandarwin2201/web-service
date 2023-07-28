@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  padding: spacer(1) spacer(2);
+  border: none;
+  border-radius: 4px;
+  font-size: $font-size-medium;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-contained {
+  @include transition(background-color);
+
+  background-color: darken($blue , 15%);
+  color: $bright;
+
+  &:hover {
+    background-color: darken($blue, 20%);
+  }
+
+  &:active {
+    background-color: darken($blue, 20%);
+    outline: none;
+    box-shadow: 0 0 0 4px lighten($blue, 20%);
+  }
+}

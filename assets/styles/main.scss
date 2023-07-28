@@ -3,9 +3,18 @@
 @import "core/colors";
 @import "core/typography";
 @import "core/reset";
+@import "core/spacing";
+@import "core/position";
 
-h1 {
-     a{
-          color: red;
-     }
-}
+// utils
+@import "utils/mixins";
+@import "utils/functions";
+@import "utils/breakpoints";
+
+// components
+@import "components/button";
+@import "components/navbar-toggler";
+
+// header
+@import "layouts/navbar";
+@import "pages/hero-section";

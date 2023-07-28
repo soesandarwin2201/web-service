@@ -12,19 +12,11 @@
 
 // Generic colors
 $blue                         : #288ad6;
-$green                        : #16c98d;
-$red                          : #fa5e5b;
-$yellow                       : #feef6d;
 $orange                       : #fe7c08;
-$pink                         : #ff708e;
-$purple                       : #8e44ad;
 $gray                         : #95a5a6;
 
 $dark                         : #000;
 $bright                       : #fff;
-
-$color-kickoff-blue           : #181830;
-$color-kickoff-orange         : #fe7c08;
 
 // Color Scheme
 $color-primary                : #181830;
@@ -40,7 +32,7 @@ $color-border                 : #ddd;
 // Links
 $color-link-default           : $color-highlight;
 $color-link-visited           : $color-link-default;
-$color-link-hover             : darken($color-link-default, 20%);
+$color-link-hover             : $orange;
 $color-link-active            : darken($color-link-default, 20%);
 
 // Text Selection
@@ -58,3 +50,5 @@ $color-youtube                : #cd201f;
 $color-pinterest              : #bd081c;
 $color-instagram              : #e4405f;
 $color-whatsapp               : #25d366;
+
+$box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;

@@ -1,0 +1,15 @@
+.about {
+  height: 100%;
+  padding: spacer(6) spacer(2);
+  background-color: darken($bright, 5%);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .about-content {
+    flex-basis: 40%;
+  }
+}
