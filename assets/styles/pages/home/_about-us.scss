@@ -1,0 +1,48 @@
+.about {
+  background-color: darken($bright, 3%);
+  padding: spacer(4) 0;
+
+  @include tablet-phone {
+		padding: spacer(3) spacer(1);
+	}
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include desktop {
+    flex-direction: column-reverse;
+    gap: spacer(3);
+  }
+
+  @include tablet-phone {
+    flex-direction: column-reverse;
+    gap: spacer(3);
+  }
+
+  .to-be-replaced-1 {
+    height: auto;
+    flex-basis: 30%;
+    max-width: 400px;
+  }
+
+  .to-be-replaced-2 {
+    height: auto;
+    flex-basis: 20%;
+    max-width: 200px;
+  }
+
+  .about-content {
+    flex-basis: 42%;
+
+    a {
+      font-size: $font-size-medium;
+    }
+
+    .anchor-primary {
+      font-weight: $font-weight-bold;
+    }
+  }
+}
