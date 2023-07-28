@@ -4,6 +4,7 @@
 @import "core/typography";
 @import "core/reset";
 @import "core/spacing";
+@import "core/shared";
 @import "core/position";
 
 // utils
@@ -16,8 +17,15 @@
 @import "components/navbar-toggler";
 @import "components/title";
 @import "components/card";
+@import "components/labels";
+@import "components/paragraph";
+@import "components/anchors";
 
-// header
+
+// Shared layouts
 @import "layouts/navbar";
-@import "pages/hero-section";
+
+// Home page
+@import "pages/home/hero-section";
+@import "pages/home/about-us";
 @import "pages/feature";

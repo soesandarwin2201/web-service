@@ -1,11 +1,9 @@
 .hero-section {
-  width: $width_full;
-  height: $height_full;
   position: relative;
-  padding: spacer(4) spacer(2);
+  padding: spacer(6) spacer(2);
 
   @include phone {
-    padding: spacer(2);
+    padding: spacer(2) spacer(1);
   }
 }
 
@@ -27,8 +25,6 @@
 }
 
 .hero-section-container {
-  @include container;
-
   padding-top: spacer(1);
   padding-bottom: spacer(1);
   background-color: $bright;
@@ -55,13 +51,6 @@
 .hero-info {
   flex-basis: 50%;
   padding: spacer(2);
-
-  p {
-    font-size: $font-size-large;
-    font-family: $font-family-secondary;
-    font-weight: $font-weight-regular;
-    margin-bottom: 1rem;
-  }
 
   @include phone {
     padding: 0.3rem;
