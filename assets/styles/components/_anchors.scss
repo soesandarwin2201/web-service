@@ -1,0 +1,15 @@
+.anchor-primary {
+  color: $color-dark-blue;
+
+  &:visited {
+    color: $color-dark-blue;
+  }
+}
+
+.anchor-secondary {
+  color: $orange;
+
+  &:visited {
+    color: $orange;
+  }
+}
