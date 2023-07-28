@@ -1,5 +1,6 @@
 body {
   font-family: $font-family-primary;
+  color: $color-primary;
 }
 
 // Headings
@@ -11,7 +12,15 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 0;
+  font-family: $font-family-secondary;
+}
+
+h1 {
+  font-size: $font-size-xl;
+}
+
+h2 {
+  font-size: $font-size-large;
 }
 
 // Body text
@@ -28,6 +37,13 @@ small {
 
 blockquote {
   margin: 0;
+}
+
+// text formats
+
+b {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-medium + 1;
 }
 
 // Lists
