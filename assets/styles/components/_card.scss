@@ -3,6 +3,14 @@
      border-radius: 12px;
      padding: 1.5rem;
      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+     @include tablet-phone {
+          flex-basis: 45%;
+        }
+
+     @include phone {
+          flex-basis: 100%;
+        }
 }
 
 .card-img {
@@ -16,8 +24,24 @@
      margin: .5rem;
      color: $color-facebook;
      margin-bottom: 1rem;
+
+     @include tablet-phone {
+          font-size: $font-size-card-mini-title;
+        }
+
+     @include phone {
+          font-size: $font-size-card-title;
+     }
 }
 
 .card-info {
      color: $gray;
+
+     @include tablet-phone {
+          font-size: 1.7rem;
+        }
+
+     @include phone {
+          font-size: 1.5rem;
+     }
 }
