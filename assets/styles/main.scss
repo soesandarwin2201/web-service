@@ -3,4 +3,17 @@
 @import "core/colors";
 @import "core/typography";
 @import "core/reset";
-@import "pages/hero-section"
+@import "pages/hero-section";
+@import "core/spacing";
+
+// utils
+@import "utils/mixins";
+@import "utils/functions";
+@import "utils/breakpoints";
+
+// components
+@import "components/button";
+@import "components/navbar-toggler";
+
+// header
+@import "layouts/navbar"

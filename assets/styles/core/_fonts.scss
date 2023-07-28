@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
 /* Default Font Variables */
 
 /* Font Sizes */
@@ -6,9 +8,12 @@ $font-size-medium: 16px;
 $font-size-large: 18px;
 $font-size-mobile-title: 2rem;
 $font-size-title: 3rem;
+$font-size-base: 16px;
+$font-size-medium: 18px;
+$font-size-large: 20px;
 
 /* Font Families */
-$font-family-primary: 'Helvetica Neue', Arial, sans-serif;
+$font-family-primary: 'Source Sans 3', sans-serif;
 $font-family-secondary: 'Times New Roman', Times, serif;
 
 /* Font Weights */
@@ -20,8 +25,3 @@ $font-weight-bold: 700;
 $line-height-small: 1.4;
 $line-height-medium: 1.6;
 $line-height-large: 1.8;
-
-/* Letter Spacing */
-$letter-spacing-tight: -1px;
-$letter-spacing-normal: 0;
-$letter-spacing-wide: 1px;

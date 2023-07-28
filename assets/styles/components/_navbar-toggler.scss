@@ -1,0 +1,48 @@
+// made by fabran99
+// link: https://codepen.io/fabran99/pen/rReeJE
+
+#navbar-toggler {
+  display: none;
+}
+
+.button{
+  @include transition(all);
+
+  display: none;
+  width: 48px;
+  height: 48px;
+  background-color: $bright;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 12px;
+  padding-top: 8px;
+  line-height: 8px;
+  text-align: left;
+
+  @include tablet-phone {
+    display: inline-block;
+  }
+}
+
+.button span {
+  height: 3px;
+  width: 100%;
+  background: lighten($dark, 15%);
+  display: inline-block;
+  transition: all 0.5s cubic-bezier(.62,.43,.35,1.47);
+}
+
+/* toggle icon animation */
+#navbar-toggler:checked ~ .button span:nth-child(1) {
+  width: 100%;
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+#navbar-toggler:checked ~ .button span:nth-child(2) {
+  width: 0;
+}
+
+#navbar-toggler:checked ~ .button span:nth-child(3) {
+  width: 100%;
+  transform: rotate(-45deg) translateY(-7px) translateX(7px);
+}
