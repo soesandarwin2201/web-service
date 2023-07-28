@@ -1,5 +1,5 @@
 .about {
-  background-color: darken($bright, 3%);
+  background-color: darken($bright, 5%);
   padding: spacer(4) 0;
 
   @include desktop {
@@ -11,7 +11,7 @@
   }
 
   @include phone {
-		padding: spacer(3) spacer(1);
+		padding: spacer(4) spacer(1);
 	}
 }
 
