@@ -5,6 +5,7 @@
 @import "core/reset";
 @import "core/spacing";
 @import "core/shared";
+@import "core/position";
 
 // utils
 @import "utils/mixins";
@@ -18,8 +19,11 @@
 @import "components/paragraph";
 @import "components/anchors";
 
+
 // Shared layouts
 @import "layouts/navbar";
 
 // Home page
+@import "layouts/navbar";
+@import "pages/hero-section";
 @import "pages/home/about-us";
