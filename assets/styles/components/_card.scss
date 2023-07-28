@@ -1,0 +1,55 @@
+.card {
+     flex-basis: 30%;
+     border-radius: 12px;
+     padding: 1.5rem;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+     @include desktop {
+          flex-basis: 45%;
+        }
+
+     @include tablet {
+          flex-basis: 50%;
+        }
+
+     @include tablet-phone {
+          flex-basis: 100%;
+        }
+
+     @include phone {
+          flex-basis: 100%;
+        }
+}
+
+.card-img {
+     width: 100px;
+     height: 100px;
+}
+
+.card-title {
+     font-size: $font-size-card-title;
+     font-weight: $font-weight-semibold;
+     margin: .5rem;
+     color: $color-facebook;
+     margin-bottom: 1rem;
+
+     @include tablet-phone {
+          font-size: $font-size-card-mini-title;
+        }
+
+     @include phone {
+          font-size: $font-size-card-title;
+     }
+}
+
+.card-info {
+     color: $gray;
+
+     @include tablet-phone {
+          font-size: 1.7rem;
+        }
+
+     @include phone {
+          font-size: 1.5rem;
+     }
+}
