@@ -3,6 +3,7 @@
   border-radius: 12px;
   padding: 1rem;
   box-shadow: $shadow-sm;
+	background-color: $bright;
 
   @include desktop {
     flex-basis: 45%;

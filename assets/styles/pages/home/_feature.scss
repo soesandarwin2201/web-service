@@ -28,10 +28,22 @@
 }
 
 .card-container {
+	background: url(/assets/images/feature-background.png);
+	background-position: center;
+  background-repeat: no-repeat;
+	background-size: 80%;
 	padding: 1rem 0;
   display: flex;
 	justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 2rem;
   gap: 2.6em;
+
+	@include desktop {
+		background: none;
+	}
+
+	@include tablet-phone {
+		background: none;
+	}
 }
