@@ -4,8 +4,16 @@
      padding: 1.5rem;
      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-     @include tablet-phone {
+     @include desktop {
           flex-basis: 45%;
+        }
+
+     @include tablet {
+          flex-basis: 50%;
+        }
+
+     @include tablet-phone {
+          flex-basis: 100%;
         }
 
      @include phone {
