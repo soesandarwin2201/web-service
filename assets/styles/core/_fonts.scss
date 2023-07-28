@@ -1,20 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
 
 /* Default Font Variables */
 
 /* Font Sizes */
+// $font-size-small: 14px;
+// <<<<<<< HEAD
+// $font-size-light: 15px;
+// =======
+// $font-size-medium: 16px;
+// $font-size-large: 18px;
+// $font-size-mobile-title: 2.2rem;
+// $font-size-title: 3rem;
+// >>>>>>> dev
+// $font-size-base: 16px;
+// $font-size-medium: 18px;
+// $font-size-large: 28px;
+// $font-size-xl: 36px;
+
 $font-size-small: 14px;
-$font-size-medium: 16px;
-$font-size-large: 18px;
-$font-size-mobile-title: 2.2rem;
-$font-size-title: 3rem;
+$font-size-light: 15px;
 $font-size-base: 16px;
 $font-size-medium: 18px;
-$font-size-large: 20px;
+$font-size-large: 28px;
+$font-size-xl: 36px;
+
+$font-size-mobile-title: 2.2rem;
+$font-size-title: 3rem;
 
 /* Font Families */
 $font-family-primary: 'Source Sans 3', sans-serif;
-$font-family-secondary: 'Times New Roman', Times, serif;
+$font-family-secondary: 'Lexend', sans-serif;
 
 /* Font Weights */
 $font-weight-light: 300;
