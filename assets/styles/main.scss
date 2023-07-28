@@ -3,8 +3,8 @@
 @import "core/colors";
 @import "core/typography";
 @import "core/reset";
-@import "pages/hero-section";
 @import "core/spacing";
+@import "core/position";
 
 // utils
 @import "utils/mixins";
@@ -16,4 +16,5 @@
 @import "components/navbar-toggler";
 
 // header
-@import "layouts/navbar"
+@import "layouts/navbar";
+@import "pages/hero-section";

@@ -1,7 +1,7 @@
 .hero-section {
-     width: 100vw;
-     height: 100vh;
-     position: relative;
+     width: $width_full;
+     height: $height_full;
+     position: $position_relative;
 }
    
 .background-container {
@@ -9,20 +9,20 @@
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
-     width: 65vw;
-     height: 50vh;
-     position: absolute;
-     top: 5px;
-     left: 0;
+     width: $width_medium;
+     height: $height_half;
+     position: $position_absolute;
+     top: $top_small;
+     left: $left_none;
      z-index: -10;
 }
 
 .hero-section-container {
   background-color: $bright;
-  position: relative;
-  height: 80%;
-  right: 0;
-  top: 4rem;
+  position: $position_relative;
+  height: $height_medium;
+  right: $right_none;
+  top: $top_large;
   margin-left: 3rem;
   border-radius: 10px;
   display: flex;
@@ -48,27 +48,16 @@
   font-weight: $font-weight-regular;
 }
 
-.hero-btn {
-  padding: .6rem 2.2rem;
-  margin-left: .7rem;
-  border: 0;
-  background-color: $blue;
-  color: $bright;
-  font-family: $font-family-secondary;
-  font-weight: $font-weight-regular;
-  border-radius: 6px;
-}
-
 .hero-animation {
   flex-basis: 60%;
   background: url(/assets/images/animation-background.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
-  height: 100%;
+  width: $width_percent;
+  height: $height_percent;
   display: flex;
-  position: relative;
+  position: $position_relative;
 }
 
 .img-container {
@@ -78,7 +67,7 @@
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  position: absolute;
+  position: $position_absolute;
   bottom: 0;
   left: 0;
 }
@@ -96,7 +85,7 @@
   justify-content: space-between;
   gap: 2rem;
   margin-top: 1rem;
-  position: absolute;
+  position: $position_absolute;
   bottom: 0;
   right: 0;
 }
@@ -106,7 +95,7 @@
   width: 250px;
   height: 250px;
   display: flex;
-  position: absolute;
+  position: $position_absolute;
   left: 180px;
   display: flex;
   gap: 6rem;
@@ -150,52 +139,5 @@
   }
 }
 
-@media screen and (max-width: 50em) {
-  .desktop {
-    display: none;
-  }
 
-  .hero-title {
-    font-size: $font-size-mobile-title;
-    margin-inline: .2rem;
-  }
-
-  .hero-section-container {
-    flex-direction: column;
-    top: 0;
-    left: 0;
-  }
-
-  .hero-info {
-    width: 100%;
-  } 
-
-  .hero-animation{
-    margin-top: 2rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
-  .img-container {
-    width: 200px;
-    height: 200px;
-    gap: .5rem;
-  }
-
-  .img-container-1 {
-    width: 200px;
-    height: 200px;
-    gap: .5rem;
-  }
-  .animation-box {
-    align-items: center;
-    width: 250px;
-    height: 250px;
-    left: 55px;
-  }
-
-}
-
-   
    
