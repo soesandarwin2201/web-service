@@ -1,0 +1,21 @@
+#feature {
+     @include container;
+     border: 1px solid #000;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 1.3rem;
+}
+
+.feature-info {
+     width: 75vw;
+}
+
+.feature-title {
+     text-align: center;
+}
+
+.feature-info {
+     text-align: center;
+}
