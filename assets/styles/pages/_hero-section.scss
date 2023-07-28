@@ -15,6 +15,14 @@
      top: $top_small;
      left: $left_none;
      z-index: -10;
+
+     @include tablet-phone {
+      display: none;
+    }
+
+     @include phone {
+      display: none;
+    }
 }
 
 .hero-section-container {
@@ -27,6 +35,23 @@
   border-radius: 10px;
   display: flex;
   gap: 1rem;
+
+  @include tablet-phone {
+    flex-direction: column;
+    height: $height_percent;
+    margin: 0;
+    width: $width_full;
+    top: $top_none;
+    left: $left_none;
+  }
+
+  @include phone {
+    height: $height_percent;
+    margin: 0;
+    width: $width_full;
+    top: $top_none;
+    left: $left_none;
+  }
 }
 
 .hero-info {
@@ -86,8 +111,8 @@
   gap: 2rem;
   margin-top: 1rem;
   position: $position_absolute;
-  bottom: 0;
-  right: 0;
+  bottom: $bottom_none;
+  right: $right_none;
 }
 
 .animation-box {
