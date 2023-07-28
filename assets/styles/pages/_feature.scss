@@ -1,66 +1,37 @@
 #feature {
-     @include container;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     gap: 1.3rem;
-     margin-bottom: 2rem;
+	padding: spacer(4) spacer(2);
+
+	@include phone {
+		padding: spacer(2) spacer(1);
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
 }
 
 .feature-info {
-     width: 75vw;
+  text-align: center;
+  width: 75%;
 
-     @include tablet {
-          width: 85vw;
-        }
+  @include desktop {
+    width: 90%;
+  }
 
-     @include phone {
-          width: 100vw;
-     }
-
-
-}
-
-.feature-title {
-     text-align: center;
-
-     @include tablet-phone {
-          font-size: $font-size-tablet-card-title;
-        }
-
-
-     @include phone {
-          font-size: $font-size-phone-card-title;
-     }
-}
-
-.feature-info {
-     text-align: center;
-
-     @include tablet-phone {
-          font-size: $font-size-card-title;
-        }
-
-
-     @include phone {
-          font-size: 1.5rem;
-     }
+  @include tablet-phone {
+    width: 100%;
+  }
 }
 
 .card-container {
-     display: flex;
-     flex-wrap: wrap;
-     margin-inline: 2.2rem;
-     gap: 2.6em;
-
-     @include tablet {
-          margin-inline: 1rem;
-          gap: 1.5rem;
-        }
-
-     @include phone {
-          margin-inline: .2rem;
-          gap: 1.4rem;
-     }
+	padding: 1rem 0;
+  display: flex;
+	justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 2.6em;
 }

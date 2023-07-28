@@ -1,6 +1,6 @@
 .hero-section {
   position: relative;
-  padding: spacer(6) spacer(2);
+  padding: spacer(4) spacer(2);
 
   @include phone {
     padding: spacer(2) spacer(1);
@@ -14,9 +14,9 @@
   background-size: cover;
   width: 65%;
   height: 400px;
-  position: $position_absolute;
-  top: $top_small;
-  left: $left_none;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: -10;
 
   @include tablet-phone {
@@ -28,7 +28,7 @@
   padding-top: spacer(1);
   padding-bottom: spacer(1);
   background-color: $bright;
-  position: $position_relative;
+  position: relative;
   border-radius: 10px;
   display: flex;
   gap: 1rem;
@@ -52,19 +52,8 @@
   flex-basis: 50%;
   padding: spacer(2);
 
-  @include phone {
-    padding: 0.3rem;
-  }
-}
-
-.hero-title {
-  font-family: $font-family-primary;
-  font-weight: $font-weight-bold;
-  font-size: $font-size-title;
-  text-align: left;
-
-  @include phone {
-    font-size: $font-size-mobile-title;
+  @include tablet-phone {
+    padding: 0;
   }
 }
 
@@ -72,7 +61,7 @@
   flex-basis: 60%;
   width: $width_percent;
   height: $height_percent;
-  position: $position_relative;
+  position: relative;
   display: inline-block;
   padding: spacer(2);
 
@@ -105,7 +94,7 @@
 .img-container {
   width: 200px;
   height: 200px;
-  position: $position_absolute;
+  position: absolute;
   bottom: 10px;
   left: -20px;
 
@@ -122,9 +111,9 @@
 .img-container-1 {
   width: 250px;
   height: 250px;
-  position: $position_absolute;
+  position: absolute;
   bottom: 0;
-  right: $right_none;
+  right: 0;
 
   @include tablet-phone {
     width: 200px;
@@ -133,7 +122,7 @@
 }
 
 .animation-box {
-  position: $position_absolute;
+  position: absolute;
   left: 30%;
   top: 32%;
   display: flex;
@@ -144,13 +133,8 @@
   width: 50px;
   height: 50px;
   background-color: $orange;
-  border: 0;
   border-radius: 5px;
-  animation-name: updown;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-  transition: all 0.3s;
+  animation: updown 10s ease infinite;
 
   @include tablet-phone {
     width: 35px;
@@ -162,13 +146,8 @@
   width: 50px;
   height: 50px;
   background-color: $orange;
-  border: 0;
   border-radius: 5px;
-  animation-name: updown;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  transition: all 0.3s;
+  animation: updown 5s ease-in-out infinite;
 
   @include tablet-phone {
     width: 35px;
