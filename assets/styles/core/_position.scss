@@ -4,7 +4,7 @@ $position_relative: relative;
 $position_absolute: absolute;
 
 $width_full: 100vw;
-$width_percent: 100vw;
+$width_percent: 100%;
 $width_medium: 65vw;
 $width_half: 50vw;
 $width_small: 35vw;
@@ -14,6 +14,7 @@ $width_small: 35vw;
 $height_full: 100vh;
 $height_percent: 100%;
 $height_medium: 80%;
+$height_auto: auto;
 $height_half: 50vh;
 $height_small: 35vh;
 
