@@ -1,0 +1,23 @@
+.card {
+     flex-basis: 30%;
+     border-radius: 12px;
+     padding: 1.5rem;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-img {
+     width: 100px;
+     height: 100px;
+}
+
+.card-title {
+     font-size: $font-size-card-title;
+     font-weight: $font-weight-semibold;
+     margin: .5rem;
+     color: $color-facebook;
+     margin-bottom: 1rem;
+}
+
+.card-info {
+     color: $gray;
+}
