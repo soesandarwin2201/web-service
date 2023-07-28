@@ -1,6 +1,6 @@
 .about {
   background-color: darken($bright, 5%);
-  padding: spacer(4) 0;
+  padding: spacer(6) 0;
 
   @include desktop {
     padding: spacer(4) spacer(2)
