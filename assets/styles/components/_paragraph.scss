@@ -1,7 +1,4 @@
 .standard-paragraph {
-  font-weight: $font-weight-regular;
-  font-family: $font-family-primary;
-  font-size: $font-size-medium;
   line-height: $line-height-medium;
 
   @include phone {
@@ -10,9 +7,6 @@
 }
 
 .small-line-height-paragraph {
-  font-weight: $font-weight-regular;
-  font-family: $font-family-primary;
-  font-size: $font-size-medium;
   line-height: $line-height-small;
 
   @include phone {
