@@ -4,6 +4,7 @@
 @import "core/typography";
 @import "core/reset";
 @import "core/spacing";
+@import "core/shared";
 
 // utils
 @import "utils/mixins";
@@ -13,6 +14,12 @@
 // components
 @import "components/button";
 @import "components/navbar-toggler";
+@import "components/labels";
+@import "components/paragraph";
+@import "components/anchors";
 
-// header
-@import "layouts/navbar"
+// Shared layouts
+@import "layouts/navbar";
+
+// Home page
+@import "pages/home/about-us";
