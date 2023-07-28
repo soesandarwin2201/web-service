@@ -4,6 +4,7 @@
 @import "core/typography";
 @import "core/reset";
 @import "core/spacing";
+@import "core/position";
 
 // utils
 @import "utils/mixins";
@@ -19,3 +20,4 @@
 // header
 @import "layouts/navbar";
 @import "pages/feature";
+@import "pages/hero-section";
