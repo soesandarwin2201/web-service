@@ -149,5 +149,53 @@
     transform: translateY(0px);
   }
 }
+
+@media screen and (max-width: 50em) {
+  .desktop {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: $font-size-mobile-title;
+    margin-inline: .2rem;
+  }
+
+  .hero-section-container {
+    flex-direction: column;
+    top: 0;
+    left: 0;
+  }
+
+  .hero-info {
+    width: 100%;
+  } 
+
+  .hero-animation{
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .img-container {
+    width: 200px;
+    height: 200px;
+    gap: .5rem;
+  }
+
+  .img-container-1 {
+    width: 200px;
+    height: 200px;
+    gap: .5rem;
+  }
+  .animation-box {
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    left: 55px;
+  }
+
+}
+
    
    
