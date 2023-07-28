@@ -1,0 +1,23 @@
+.h1 {
+  font-size: $font-size-3xl;
+
+  @include phone {
+    font-size: $font-size-2xl;
+  }
+}
+
+.h2 {
+  font-size: $font-size-2xl;
+
+  @include phone {
+    font-size: $font-size-xl;
+  }
+}
+
+.h3 {
+  font-size: $font-size-xl;
+
+  @include phone {
+    font-size: $font-size-large;
+  }
+}
