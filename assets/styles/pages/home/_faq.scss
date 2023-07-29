@@ -1,0 +1,65 @@
+.faq {
+  padding: spacer(6) 0;
+
+  @include desktop {
+    padding: spacer(4) spacer(2)
+  }
+
+  @include tablet {
+    padding: spacer(4) spacer(2)
+  }
+
+  @include phone {
+		padding: spacer(4) spacer(1);
+	}
+
+  .container .h2 {
+    text-align: center;
+    margin-bottom: spacer(4);
+  }
+}
+
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: spacer(10);
+  row-gap: spacer(5);
+  padding: spacer(5);
+
+  @include tablet-phone {
+    grid-template-columns: repeat(1, 1fr);
+    padding: spacer(1);
+    gap: spacer(2);
+  }
+
+  @include phone {
+    gap: spacer(1);
+    padding: 0;
+  }
+
+  .faq-item {
+    @include list-unstyled;
+
+    .item-title {
+      color: $color-dark-blue;
+      position: relative;
+
+      &::before {
+        content: "?";
+        display: block;
+        color: $bright;
+        padding: spacer(0.5) spacer(1.5);
+        border-radius: 50%;
+        background-color: $color-dark-blue;
+
+        position: absolute;
+        top: -3px;
+        left: -60px;
+
+        @include tablet-phone {
+          display: none;
+        }
+      }
+    }
+  }
+}
