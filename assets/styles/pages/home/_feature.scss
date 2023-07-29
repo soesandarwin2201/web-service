@@ -30,14 +30,14 @@
 .card-container {
 	background: url(/assets/images/feature-background.png);
 	background-position: center;
-  background-repeat: no-repeat;
+     background-repeat: no-repeat;
 	background-size: 80%;
 	padding: 1rem 0;
-  display: flex;
+     display: flex;
 	justify-content: center;
-  flex-wrap: wrap;
-  margin: 2rem 0;
-  gap: 2.6em;
+     flex-wrap: wrap;
+     margin: 2rem 0;
+     gap: 2.6em;
 
 	@include desktop {
 		background: none;
