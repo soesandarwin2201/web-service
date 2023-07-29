@@ -1,5 +1,5 @@
 .about {
-  background-color: darken($bright, 5%);
+  background-color: darken($bright, 2%);
   padding: spacer(6) 0;
 
   @include desktop {
@@ -47,6 +47,10 @@
 
     a {
       font-size: $font-size-medium;
+
+      @include phone {
+        font-size: $font-size-light;
+      }
     }
 
     .anchor-primary {

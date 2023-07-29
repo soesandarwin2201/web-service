@@ -3,4 +3,8 @@
   color: $gray;
   letter-spacing: $letter-spacing-wide;
   font-size: $font-size-light;
+
+  @include phone {
+    font-size: $font-size-xs;
+  }
 }

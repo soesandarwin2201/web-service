@@ -1,5 +1,6 @@
 body {
   font-family: $font-family-primary;
+  font-size: $font-size-base;
   color: $color-primary;
 }
 
@@ -14,14 +15,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 1rem;
   font-family: $font-family-secondary;
-}
-
-h1 {
-  font-size: $font-size-xl;
-}
-
-h2 {
-  font-size: $font-size-large;
+  line-height: $line-height-small;
 }
 
 // Body text
@@ -30,6 +24,9 @@ h2 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-weight: $font-weight-regular;
+  font-family: $font-family-primary;
+  font-size: $font-size-medium;
 }
 
 small {
@@ -44,7 +41,6 @@ blockquote {
 
 b {
   font-weight: $font-weight-bold;
-  font-size: $font-size-medium + 1;
 }
 
 // Lists

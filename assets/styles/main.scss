@@ -15,11 +15,11 @@
 // components
 @import "components/button";
 @import "components/navbar-toggler";
-@import "components/title";
 @import "components/card";
 @import "components/labels";
 @import "components/paragraph";
 @import "components/anchors";
+@import "components/headings";
 
 
 // Shared layouts
@@ -28,4 +28,4 @@
 // Home page
 @import "pages/home/hero-section";
 @import "pages/home/about-us";
-@import "pages/feature";
+@import "pages/home/feature";

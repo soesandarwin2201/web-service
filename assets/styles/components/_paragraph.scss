@@ -1,4 +1,15 @@
-.medium-paragraph {
+.standard-paragraph {
   line-height: $line-height-medium;
-  font-size: $font-size-medium;
+
+  @include phone {
+    font-size: $font-size-light;
+  }
+}
+
+.small-line-height-paragraph {
+  line-height: $line-height-small;
+
+  @include phone {
+    font-size: $font-size-light;
+  }
 }
