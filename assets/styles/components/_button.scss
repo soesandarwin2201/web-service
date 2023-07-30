@@ -13,6 +13,24 @@
   }
 }
 
+.btn-outlined {
+  @include transition(all);
+  color: $blue;
+  border: 1px solid $blue;
+  background-color: $color-bg-primary;
+
+  &:hover {
+    border-color: darken($blue, 20%);
+    color: darken($blue, 20%);
+  }
+
+  &:active {
+    border-color: darken($blue, 20%);
+    outline: none;
+    box-shadow: 0 0 0 4px lighten($blue, 20%);
+  }
+}
+
 .btn-contained {
   @include transition(background-color);
 
