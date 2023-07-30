@@ -1,16 +1,11 @@
 #feature {
-	padding: spacer(4) spacer(2);
-
-	@include phone {
-		padding: spacer(2) spacer(1);
-	}
+	@include section-padding;
 
 	.container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 2rem;
 	}
 }
 

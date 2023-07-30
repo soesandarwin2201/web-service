@@ -1,18 +1,7 @@
 .about {
-  background-color: darken($bright, 2%);
-  padding: spacer(6) 0;
+  @include section-padding;
 
-  @include desktop {
-    padding: spacer(4) spacer(2)
-  }
-
-  @include tablet {
-    padding: spacer(4) spacer(2)
-  }
-
-  @include phone {
-		padding: spacer(4) spacer(1);
-	}
+  background-color: $color-bg-secondary;
 }
 
 .about-container {

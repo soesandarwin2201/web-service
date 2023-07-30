@@ -1,17 +1,5 @@
 .faq {
-  padding: spacer(6) 0;
-
-  @include desktop {
-    padding: spacer(4) spacer(2)
-  }
-
-  @include tablet {
-    padding: spacer(4) spacer(2)
-  }
-
-  @include phone {
-		padding: spacer(4) spacer(1);
-	}
+  @include section-padding;
 
   .container .h2 {
     text-align: center;

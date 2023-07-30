@@ -1,10 +1,7 @@
 .hero-section {
-  position: relative;
-  padding: spacer(4) spacer(2);
+  @include section-padding;
 
-  @include phone {
-    padding: spacer(2) spacer(1);
-  }
+  position: relative;
 }
 
 .background-container {
