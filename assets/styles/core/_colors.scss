@@ -23,6 +23,10 @@ $color-primary                : #181830;
 $color-secondary              : $orange;
 $color-highlight              : $blue;
 
+// Background colors
+$color-bg-primary             : $bright;
+$color-bg-secondary           : darken($bright, 4%);
+
 // Common colors
 $color-text                   : #444;
 $color-dark-blue              : darken($blue, 25%);
