@@ -1,0 +1,141 @@
+.example {
+  @include section-padding;
+
+  background-color: $color-bg-secondary;
+
+  .example-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: spacer(6) spacer(2);
+
+    @include desktop {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @include tablet-phone {
+      flex-direction: column;
+      justify-content: center;
+      padding: spacer(2) 0;
+    }
+
+    .example-info {
+      flex-basis: 45%;
+    }
+
+    .example-image {
+      height: fit-content;
+      flex-basis: 45%;
+      padding: spacer(1) 0;
+      border-radius: 1rem;
+      background-color: $color-bg-primary;
+      overflow: hidden;
+
+      @include desktop {
+        display: none;
+      }
+
+      @include tablet-phone {
+        display: none;
+      }
+    }
+  }
+
+  .other-examples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+
+    @include desktop {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: spacer(3);
+    }
+
+    @include tablet-phone {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: spacer(3);
+    }
+
+    .example-card {
+      width: 325px;
+      height: 450px;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: $bright;
+      overflow: hidden;
+
+      @include desktop {
+        width: 60%;
+        height: 500px;
+      }
+
+      @include tablet {
+        width: 80%;
+        height: 500px;
+      }
+
+      @include phone {
+        width: 100%;
+      }
+
+      .example-card-image {
+        height: 100%;
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+      }
+
+      &:hover {
+        .example-card-image {
+          transform: scale(1.05);
+        }
+      }
+
+      .card {
+        text-align: center;
+        box-shadow: none;
+        padding: spacer(2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .card-img {
+          width: 150px;
+          margin-bottom: 0;
+        }
+
+        .h3 {
+          margin-bottom: 0;
+        }
+
+        .btn {
+          display: block;
+        }
+      }
+
+      .card-menu-illustration {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        background-color: darken($color-bg-primary, 6%);
+        z-index: 10;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 spacer(2);
+
+        span {
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          z-index: 20;
+          background-color: $gray;
+        }
+      }
+    }
+  }
+}

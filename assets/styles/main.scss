@@ -4,13 +4,13 @@
 @import "core/typography";
 @import "core/reset";
 @import "core/spacing";
-@import "core/shared";
 @import "core/position";
 
 // utils
-@import "utils/mixins";
-@import "utils/functions";
 @import "utils/breakpoints";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/shared";
 
 // components
 @import "components/button";
@@ -30,3 +30,7 @@
 @import "pages/home/about-us";
 @import "pages/home/feature";
 @import "pages/home/faq";
+
+// Examples page
+@import "pages/examples/hero";
+@import "pages/examples/example";

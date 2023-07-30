@@ -1,0 +1,33 @@
+.examples-hero {
+  @include section-padding;
+
+  padding: spacer(6) spacer(3);
+
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: $bright;
+  
+    @include desktop {
+      flex-direction: column;
+    }
+  
+    @include tablet-phone {
+      flex-direction: column;
+      gap: spacer(3);
+    }
+
+    .hero-content {
+      flex-basis: 45%;
+    
+      @include tablet-phone {
+        padding: 0;
+      }
+    }
+
+    .hero-illustration {
+      flex-basis: 45%;
+      padding: spacer(2) 0;
+    }
+  }
+}
