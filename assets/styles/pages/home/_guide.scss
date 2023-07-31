@@ -1,8 +1,4 @@
-.hosting-section {
-     background: url(/assets/images/hosting-background.png);
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
+.guide-section {
      width: $width_percent;
      height: $height_percent;
      display: flex;
@@ -10,7 +6,7 @@
      justify-content: center;
 }
 
-.hosting-wrapper {
+.guide-wrapper {
      display: flex;
      align-items: flex-start;
      gap: 1rem;
@@ -21,7 +17,7 @@
      background-color: $bright ;
      border-radius: 10px;
      box-shadow: $shadow-sm;
-
+     
      @include desktop {
           width: 95vw;
         }
@@ -30,22 +26,32 @@
           flex-direction: column;
           align-items: flex-start;
         }
+
 }
 
-.title-container {
+.title-container-guide {
+     flex-basis: 35%;
      display: flex;
      align-items: flex-start;
      flex-direction: column;
      gap: 4.5rem;
 }
 
-.hosting-info {
-     padding: spacer(2);
+.guid-lists {
+     list-style: none;
 }
 
-.web-hosting {
-     font-weight: 900;
+.guid-items {
+     padding: spacer(.3);
 }
 
-
-
+.list-num {
+     width: 8px;
+     height: 8px;
+     padding:spacer(.1) spacer(.5);
+     border-radius: 5px;
+     background-color: $orange;
+     margin-right: .5rem;
+     font-size: 1rem;
+     color: $bright;
+}
