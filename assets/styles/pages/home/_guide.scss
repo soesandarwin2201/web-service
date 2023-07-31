@@ -1,61 +1,74 @@
 .guide-section {
-     width: $width_percent;
-     height: $height_percent;
-     display: flex;
-     align-items: center;
-     justify-content: center;
+	@include section-padding;
+	padding: spacer(6) spacer(2);
 
-     .guide-wrapper {
-          display: flex;
-          align-items: flex-start;
-          gap: 1rem;
-          width: 90vw;
-          height: auto;
-          margin: 3rem;
-          padding: spacer(2.3);
-          background-color: $bright ;
-          border-radius: 10px;
-          box-shadow: $shadow-sm;
-          
-          @include desktop {
-               width: 95vw;
-             }
-           
-             @include tablet-phone {
-               flex-direction: column;
-               align-items: flex-start;
-             }
+  .guide-wrapper {
+    display: flex;
+    gap: 3rem;
+    padding: 3rem;
+    background-color: $bright;
+    border-radius: 10px;
+    box-shadow: $shadow-sm;
 
-             @include phone {
-               width: 95vw;
-             }
-     
-     }
+		@include desktop {
+			gap: 2rem;
+		}
 
-     .title-container-guide {
-          flex-basis: 35%;
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 4.5rem;
-     }
+    @include tablet-phone {
+      flex-direction: column;
+			padding: 1rem;
+			gap: 1rem;
+    }
 
-     .guid-lists {
-          list-style: none;
-     }
+		.hosting-info {
+			padding: spacer(1);
 
-     .guid-items {
-          padding: spacer(.3);
-     }
-     
-     .list-num {
-          width: 8px;
-          height: 8px;
-          padding:spacer(.1) spacer(.5);
-          border-radius: 5px;
-          background-color: $orange;
-          margin-right: .5rem;
-          font-size: 1rem;
-          color: $bright;
-     }
+			> .small-line-height-paragraph {
+				margin-bottom: 1.5rem;
+			}
+		}
+  }
+
+  .title-container-guide {
+		padding: spacer(1);
+    flex-basis: 32%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.h1 {
+			@include tablet-phone {
+				margin-bottom: 2rem;
+			}
+		}
+  }
+
+  .guid-lists {
+    list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 2.2rem;
+
+		.small-line-height-paragraph {
+			margin-bottom: 0;
+			margin-left: 3rem;
+		}
+  }
+
+	.guid-items {
+		position: relative;
+
+		.list-num {
+			position: absolute;
+			left: 0;
+			top: -6px;
+			padding: 5px 12px;
+			border-radius: 5px;
+			background-color: $orange;
+			margin-right: 0.5rem;
+			font-size: 1rem;
+			font-weight: $font-weight-bold;
+			color: $bright;
+		}
+	}
 }
