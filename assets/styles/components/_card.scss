@@ -42,6 +42,14 @@
 	align-items: center;
 	justify-content: center;
 
+	@include desktop {
+		flex-basis: 45%;
+	}
+	 
+	@include tablet-phone {
+		flex-basis: 100%;
+	}
+
 	.sv-img-container {
 		flex-basis: 40%;
 	}
@@ -55,4 +63,16 @@
 	.sv-card-info {
 		flex-basis: 50%;
 	}
+
+	.card-title {
+		font-weight: $font-weight-semibold;
+		color: $color-dark-blue;
+		margin-bottom: 1rem;
+	}
+	
+	.card-info {
+		margin-bottom: 0;
+		color: $gray;
+	}
+
 }
