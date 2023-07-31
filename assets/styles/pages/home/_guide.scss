@@ -4,54 +4,54 @@
      display: flex;
      align-items: center;
      justify-content: center;
-}
 
-.guide-wrapper {
-     display: flex;
-     align-items: flex-start;
-     gap: 1rem;
-     width: 90vw;
-     height: auto;
-     margin: 3rem;
-     padding: spacer(2.3);
-     background-color: $bright ;
-     border-radius: 10px;
-     box-shadow: $shadow-sm;
-     
-     @include desktop {
-          width: 95vw;
-        }
-      
-        @include tablet-phone {
-          flex-direction: column;
+     .guide-wrapper {
+          display: flex;
           align-items: flex-start;
-        }
+          gap: 1rem;
+          width: 90vw;
+          height: auto;
+          margin: 3rem;
+          padding: spacer(2.3);
+          background-color: $bright ;
+          border-radius: 10px;
+          box-shadow: $shadow-sm;
+          
+          @include desktop {
+               width: 95vw;
+             }
+           
+             @include tablet-phone {
+               flex-direction: column;
+               align-items: flex-start;
+             }
+     
+     }
 
-}
+     .title-container-guide {
+          flex-basis: 35%;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 4.5rem;
+     }
 
-.title-container-guide {
-     flex-basis: 35%;
-     display: flex;
-     align-items: flex-start;
-     flex-direction: column;
-     gap: 4.5rem;
-}
+     .guid-lists {
+          list-style: none;
+     }
 
-.guid-lists {
-     list-style: none;
-}
-
-.guid-items {
-     padding: spacer(.3);
-}
-
-.list-num {
-     width: 8px;
-     height: 8px;
-     padding:spacer(.1) spacer(.5);
-     border-radius: 5px;
-     background-color: $orange;
-     margin-right: .5rem;
-     font-size: 1rem;
-     color: $bright;
+     .guid-items {
+          padding: spacer(.3);
+     }
+     
+     .list-num {
+          width: 8px;
+          height: 8px;
+          padding:spacer(.1) spacer(.5);
+          border-radius: 5px;
+          background-color: $orange;
+          margin-right: .5rem;
+          font-size: 1rem;
+          color: $bright;
+     }
 }
