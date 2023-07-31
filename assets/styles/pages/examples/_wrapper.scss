@@ -1,0 +1,22 @@
+.examples-wrapper {
+  
+  .example:nth-child(odd) {
+    background-color: $color-bg-secondary;
+
+    .example-content {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .example:nth-child(even) {
+    background-color: $color-bg-primary;
+
+    .example-content {
+      flex-direction: row;
+    }
+
+    .example-card {
+      box-shadow: $shadow-sm;
+    }
+  }
+}
