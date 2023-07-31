@@ -1,17 +1,5 @@
 .faq {
-  padding: spacer(6) 0;
-
-  @include desktop {
-    padding: spacer(4) spacer(2)
-  }
-
-  @include tablet {
-    padding: spacer(4) spacer(2)
-  }
-
-  @include phone {
-		padding: spacer(4) spacer(1);
-	}
+  @include section-padding;
 
   .container .h2 {
     text-align: center;
@@ -24,7 +12,7 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: spacer(10);
   row-gap: spacer(5);
-  padding: spacer(5);
+  padding: spacer(5) spacer(5) 0 spacer(5);
 
   @include tablet-phone {
     grid-template-columns: repeat(1, 1fr);
