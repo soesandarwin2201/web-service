@@ -3,8 +3,8 @@
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
-     width: 100%;
-     height: 100%;
+     width: $width_percent;
+     height: $height_percent;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -17,14 +17,14 @@
      width: 90vw;
      height: auto;
      margin: 3rem;
-     padding: 2.3rem;
-     background-color: #fff;
+     padding: spacer(2.3);
+     background-color: $bright ;
      border-radius: 10px;
      box-shadow: $shadow-sm;
 }
 
 .hosting-info {
-     padding: 1.5rem;
+     padding: spacer(2);
 }
 
 .web-hosting {
