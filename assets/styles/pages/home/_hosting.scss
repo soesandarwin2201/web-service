@@ -1,55 +1,65 @@
 .hosting-section {
-     background: url(/assets/images/hosting-background.png);
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
-     width: $width_percent;
-     height: $height_percent;
-     display: flex;
-     align-items: center;
-     justify-content: center;
+	@include section-padding;
+
+	padding: spacer(8) spacer(2);
+  background: url(/assets/images/hosting-background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  .container {
+    max-width: 1225px;
+  }
 }
 
 .hosting-wrapper {
-     display: flex;
-     align-items: flex-start;
-     gap: 1rem;
-     width: 90vw;
-     height: auto;
-     margin: 3rem;
-     padding: spacer(2.3);
-     background-color: $bright ;
-     border-radius: 10px;
-     box-shadow: $shadow-sm;
+  display: flex;
+  gap: 1rem;
+  padding: spacer(2.3);
+  background-color: $bright;
+  border-radius: 10px;
+  box-shadow: $shadow-sm;
 
-     @include desktop {
-          width: 95vw;
-        }
-      
-        @include tablet-phone {
-          flex-direction: column;
-          align-items: flex-start;
-        }
+	@include desktop {
+		gap: 0;
+		padding: spacer(1);
+  }
 
-        @include phone {
-          width: 95vw;
-        }
+  @include tablet-phone {
+    flex-direction: column;
+		gap: 0;
+  }
 }
 
 .title-container {
-     display: flex;
-     align-items: flex-start;
-     flex-direction: column;
-     gap: 4.5rem;
+	padding: spacer(1);
+
+	@include tablet-phone {
+		padding: 0;
+	}
+
+  .h1 {
+		margin-bottom: 4.5rem;
+
+		@include tablet-phone {
+			margin-bottom: 2rem;
+		}
+	}
+
+	.btn {
+		margin-bottom: 1rem;
+	}
 }
 
 .hosting-info {
-     padding: spacer(2);
+  padding: spacer(2);
+
+	@include tablet-phone {
+		padding: 0;
+	}
 }
 
 .web-hosting {
-     font-weight: 900;
+  font-weight: $font-weight-black;
 }
-
-
-
